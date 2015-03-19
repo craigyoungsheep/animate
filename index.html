@@ -3,18 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>Animate</title>
-    <script src="animate.min.js"></script>
-    <script>
-        animate({
-        el: "div",
-        translateX: 100,
-        opacity: .5,
-        duration: 500,
-        complete: function() { alert("Done!") }
-    });</script>
+    <link rel="stylesheet" href="stylesheets/main.css">
+    <script src="scripts/animate.min.js"></script>
 </head>
 <body>
+<section>
     <div>HELLO</div>
-
+</section>
 </body>
+<script>
+    animate({
+        el: "section",
+        translate: 100,
+        opacity: .5,
+        delay: 1000,
+        duration: 500,
+        complete: function() {}
+    });
+</script>
 </html>
